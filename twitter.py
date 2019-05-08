@@ -17,7 +17,7 @@ twitter = Twython(
 
 # message = random.choice(messages)
 message = "Hello world - here's a pic!"
-image = open('snicker2.png', 'rb')
+image = open('snicker3.png', 'rb')
 response = twitter.upload_media(media=image)
 media_id = [response['media_id']]
 twitter.update_status(status=message, media_ids=media_id)
